@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scanners",
+  "info": {
+    "name": "Scanner"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "location": {
+      "type": "string"
+    },
+    "branch": {
+      "model": "branch"
+    }
+  }
+}

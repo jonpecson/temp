@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activity_logs",
+  "info": {
+    "name": "Activity Log",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "scannerLocation": {
+      "type": "string"
+    },
+    "direction": {
+      "type": "string",
+      "required": true
+    },
+    "status": {
+      "type": "string"
+    },
+    "reason": {
+      "type": "string"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "branch": {
+      "model": "branch"
+    },
+    "business_profile": {
+      "model": "business-profile"
+    },
+    "user_profile": {
+      "model": "user-profile"
+    }
+  }
+}

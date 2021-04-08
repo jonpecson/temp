@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "business_profiles",
+  "info": {
+    "name": "Business Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "branches": {
+      "collection": "branch",
+      "via": "business_profile"
+    },
+    "nameOfEmployer": {
+      "type": "string",
+      "required": false
+    },
+    "natureOfBusiness": {
+      "type": "string",
+      "required": false
+    },
+    "province": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "barangay": {
+      "type": "string",
+      "required": true
+    },
+    "street": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
