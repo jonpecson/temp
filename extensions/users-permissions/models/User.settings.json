@@ -58,6 +58,14 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Employee",
+        "Customer",
+        "Business"
+      ]
     }
   }
 }
