@@ -60,6 +60,9 @@
         "Male",
         "Female"
       ]
+    },
+    "position": {
+      "type": "string"
     }
   }
 }
