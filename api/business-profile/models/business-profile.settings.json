@@ -16,8 +16,8 @@
       "required": true
     },
     "branches": {
-      "collection": "branch",
-      "via": "business_profile"
+      "via": "business_profile",
+      "collection": "branch"
     },
     "nameOfEmployer": {
       "type": "string",
