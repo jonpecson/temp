@@ -64,7 +64,8 @@
       "enum": [
         "Employee",
         "Customer",
-        "Business"
+        "Business",
+        "Branch_Manager"
       ]
     }
   }
